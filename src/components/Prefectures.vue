@@ -11,11 +11,13 @@ onMounted(async () => {
   });
   
   prefectures.value = getPrefectureList.data.result;
+
 });
 </script>
 
 <template>
   <h1>都道府県</h1>
+
   <div v-for="prefecture in prefectures">
     <label>{{ prefecture.prefName }}</label>
     <input type="checkbox" />
