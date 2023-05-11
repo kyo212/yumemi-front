@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
+import PrefecturesGraph from "../src/pages/PrefecturesGraph.vue";
 </script>
 
 <template>
-  <HelloWorld msg="Vite + Vue" />
+  <PrefecturesGraph />
 </template>
