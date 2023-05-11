@@ -5,9 +5,11 @@ import { ref, onMounted } from "vue";
 const prefectures = ref();
 
 onMounted(async () => {
+  
   const getPrefectureList = await axios.get(import.meta.env.VITE_APP_RESAS_URL, {
     headers: { "X-API-KEY": import.meta.env.VITE_APP_API_KEY },
   });
+  
   prefectures.value = getPrefectureList.data.result;
 });
 </script>
