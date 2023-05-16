@@ -5,5 +5,5 @@ export type SelectedPrefectures = {
 
 export type SelectedPopulation = {
   prefCode: number;
-  data: any;
+  data: [{ label: number; data: [{ year: string; value: number }] }];
 };
