@@ -2,6 +2,6 @@
 
 <template>
   <div>
-    <p>aaaa</p>
+    <p>Graphページ</p>
   </div>
 </template>
