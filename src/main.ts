@@ -1,6 +1,9 @@
 import { createApp } from "vue";
-import "./style.css";
 import App from "./App.vue";
+import VueHighcharts from "vue3-highcharts";
+import "./style.css";
 
+const app = createApp(App);
+app.use(VueHighcharts);
 
-createApp(App).mount("#app");
+app.mount("#app");
