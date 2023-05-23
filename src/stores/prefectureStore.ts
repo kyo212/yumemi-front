@@ -16,13 +16,13 @@ export const usePrefectureStore = defineStore("prefecture", {
       response: SelectedPopulation
     ) {
       this.selectedPopulation.push({
-        prefCode: selected.prefCode,
+        name: selected.prefName,
         data: response.data,
       });
     },
     setRemovePopulation(removedSelection: SelectedPrefectures) {
       const removeIndex = this.selectedPopulation.findIndex(
-        (population) => population.prefCode === removedSelection?.prefCode
+        (population) => population.name === removedSelection?.prefName
       );
       this.selectedPopulation.splice(removeIndex, 1);
     },
