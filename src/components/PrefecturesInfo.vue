@@ -18,7 +18,7 @@ watch(
     // 最も新しくチェックした要素の特定
     const newSelectedPrefecture = newValues.filter(
       (newValue) =>
-        !oldValues.find((oldValue) => oldValue.prefCode === newValue.prefCode)
+        !oldValues.find((oldValue) => oldValue.prefName === newValue.prefName)
     );
     const selected = newSelectedPrefecture[0];
     if (selected) {
@@ -30,7 +30,7 @@ watch(
         (oldValue) => !newValues.includes(oldValue)
       );
       // チェックが外された要素のインデックスを特定
-      if (removedSelection) store.setRemovePopulation(removedSelection);
+      removedSelection && store.setRemovePopulation(removedSelection);
     }
   }
 );
