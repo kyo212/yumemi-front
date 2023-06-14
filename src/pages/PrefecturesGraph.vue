@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import Prefectures from "../components/Prefectures.vue";
+import PrefecturesInfo from "../components/PrefecturesInfo.vue";
+import Graph from "../components/Graph.vue";
 </script>
 
 <template>
-  <Prefectures />
+  <PrefecturesInfo />
+  <Graph />
 </template>
